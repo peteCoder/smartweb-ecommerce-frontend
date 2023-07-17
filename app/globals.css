@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-[#f8f9fa] min-h-screen;
+}
+
+.open-toggle{
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    max-height: 0;
+}
+.open-toggle.active {
+    max-height: 80rem;
+}
+
+
+/* For Product Properties */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row > * {
+    @apply px-2 max-w-full;
+}
+
+dd {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    color: #565656;
+}
+
+dt {
+    color: #9DA1A7;
+}
+
+.col-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 25%;
+}
+.col-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+.flex-strategy {
+    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+
+}
+
+
+
+.mix-blend-multiply {
+    mix-blend-mode: multiply;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 0.43rem 1.84rem 0.43rem 0.84rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #565656;
+    background-color: #f9f9f9;
+    background-image: url('/images/others/formselectarrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 0.84rem center;
+    background-size: 16px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.4rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+/* 0.43rem 0.84rem */
+.cart-btn {
+    @apply py-[0.2rem] px-[0.60rem] md:py-[0.43rem] md:px-[0.84rem] cursor-pointer border hover:bg-[#fafafa] rounded-[0.4rem] text-center  border-[#dee2e6] text-[#212529] h-full;
+}
+.cart-qty {
+    @apply py-[0.2rem] px-[0.60rem]  md:py-[0.43rem] md:px-[0.84rem] pointer-events-none cursor-default border-y border-y-[#dee2e6];
+}
+.btn-left {
+    @apply rounded-r-none;
+}
+.btn-right {
+    @apply rounded-l-none;
+}
+
+.grid-btn {
+    @apply py-[0.2rem] px-[0.60rem] md:py-[0.47rem] md:px-[0.88rem] cursor-pointer border hover:bg-[#fafafa] rounded-[0.2rem] text-center  border-[#dee2e6] text-[#212529] h-full;
+}
+
+.grid-btn-left {
+    @apply rounded-r-none;
+}
+
+.grid-btn-right {
+    @apply rounded-l-none;
+}
